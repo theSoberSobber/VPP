@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    * {
+        scroll-padding-top: 10rem;
+    }
+    
+    html {
+        scroll-behavior:smooth
+    }
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #cbcbcb;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #777;
+        border-radius: 0.05rem;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;   
+    }
+      
+    ::selection {
+        background-color: #60a5fa; 
+        color: #fff;
+    }
+
+    .menu-height {
+        height: calc(100vh - 4rem)
+    }
+
+    .dd-forward{
+        animation: grow 0.5s;
+    }
+
+    @keyframes grow{
+        0% {max-height: 0;}
+        100% {max-height: 16rem;}
+    }
+
+}
